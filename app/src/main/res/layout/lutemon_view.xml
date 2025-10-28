@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginTop="2dp"
+    android:background="#23B8FB"
+    android:orientation="horizontal">
+
+
+    <ImageView
+        android:id="@+id/img_LutemonList"
+        android:layout_width="50dp"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:srcCompat="@drawable/banankey_1" />
+
+    <LinearLayout
+        android:layout_width="75dp"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtLutemonName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LutemonName"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/txtLutemonType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LutemonType"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtLutemonHealth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="HP x/y" />
+
+        <TextView
+            android:id="@+id/txtLutemonExperience"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exp: z" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="5dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtBattlesWon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtBattlesHad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtTimesTrained"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/txtEvolved"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</androidx.appcompat.widget.LinearLayoutCompat>

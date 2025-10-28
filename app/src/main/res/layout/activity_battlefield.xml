@@ -1,0 +1,474 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/img_"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BattlefieldActivity">
+
+    <ImageView
+        android:id="@+id/image_background_battle"
+        android:layout_width="392dp"
+        android:layout_height="396dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/background_battle" />
+
+    <ImageView
+        android:id="@+id/imgFighter2"
+        android:layout_width="118dp"
+        android:layout_height="171dp"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.843"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.071"
+        app:srcCompat="@drawable/banankey_1" />
+
+    <ImageView
+        android:id="@+id/imgFighter1"
+        android:layout_width="146dp"
+        android:layout_height="210dp"
+        android:scaleX="-1"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.134"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.79"
+        app:srcCompat="@drawable/banankey_1" />
+
+    <ScrollView
+        android:id="@+id/sv_battleInfo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="32dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/txtBattleInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scrollbarStyle="insideOverlay"
+            android:scrollbars="vertical"
+            android:text="Battle info will be here" />
+    </ScrollView>
+
+    <ImageView
+        android:id="@+id/img_Banankey_1_basic"
+        android:layout_width="151dp"
+        android:layout_height="162dp"
+        android:scaleX="-1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.722"
+        app:srcCompat="@drawable/banankey_1" />
+
+    <ImageView
+        android:id="@+id/img_Banankey_1_evolved"
+        android:layout_width="175dp"
+        android:layout_height="200dp"
+        android:scaleX="-1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.153"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.698"
+        app:srcCompat="@drawable/banankey_2" />
+
+    <ImageView
+        android:id="@+id/img_Banankey_1_dead"
+        android:layout_width="186dp"
+        android:layout_height="203dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/txtBattleInfo"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.101"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.822"
+        app:srcCompat="@drawable/banankey_3" />
+
+    <ImageView
+        android:id="@+id/img_Banankey_2_basic"
+        android:layout_width="152dp"
+        android:layout_height="127dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.099"
+        app:srcCompat="@drawable/banankey_1" />
+
+    <ImageView
+        android:id="@+id/img_Banankey_2_evolved"
+        android:layout_width="171dp"
+        android:layout_height="177dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.847"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.031"
+        app:srcCompat="@drawable/banankey_2" />
+
+    <ImageView
+        android:id="@+id/img_Banankey_2_dead"
+        android:layout_width="152dp"
+        android:layout_height="178dp"
+        android:scaleX="-1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.123"
+        app:srcCompat="@drawable/banankey_3" />
+
+    <ImageView
+        android:id="@+id/img_Brawlberry_1_basic"
+        android:layout_width="155dp"
+        android:layout_height="148dp"
+        android:scaleX="-1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.144"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.763"
+        app:srcCompat="@drawable/brawlberry_1" />
+
+    <ImageView
+        android:id="@+id/img_Brawlberry_1_evolved"
+        android:layout_width="166dp"
+        android:layout_height="171dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.128"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.706"
+        app:srcCompat="@drawable/brawlberry_2" />
+
+    <ImageView
+        android:id="@+id/img_Brawlberry_1_dead"
+        android:layout_width="176dp"
+        android:layout_height="101dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.12"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.822"
+        app:srcCompat="@drawable/brawlberry_3" />
+
+    <ImageView
+        android:id="@+id/img_Brawlberry_2_basic"
+        android:layout_width="111dp"
+        android:layout_height="113dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.809"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.228"
+        app:srcCompat="@drawable/brawlberry_1" />
+
+    <ImageView
+        android:id="@+id/img_Brawlberry_2_evolved"
+        android:layout_width="154dp"
+        android:layout_height="153dp"
+        android:scaleX="-1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.93"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.067"
+        app:srcCompat="@drawable/brawlberry_2" />
+
+    <ImageView
+        android:id="@+id/img_Brawlberry_2_dead"
+        android:layout_width="149dp"
+        android:layout_height="85dp"
+        android:scaleX="-1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.859"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.292"
+        app:srcCompat="@drawable/brawlberry_3" />
+
+    <ImageView
+        android:id="@+id/img_Doczoi_1_basic"
+        android:layout_width="201dp"
+        android:layout_height="155dp"
+        android:scaleX="-1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.037"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.738"
+        app:srcCompat="@drawable/doczoi_1" />
+
+    <ImageView
+        android:id="@+id/img_Doczoi_1_evolved"
+        android:layout_width="161dp"
+        android:layout_height="198dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginBottom="225dp"
+        android:scaleX="-1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.116"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.044"
+        app:srcCompat="@drawable/doczoi_2" />
+
+    <ImageView
+        android:id="@+id/img_Doczoi_1_dead"
+        android:layout_width="124dp"
+        android:layout_height="94dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.203"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.749"
+        app:srcCompat="@drawable/doczoi_3" />
+
+    <ImageView
+        android:id="@+id/img_Doczoi_2_evolved"
+        android:layout_width="109dp"
+        android:layout_height="164dp"
+        android:layout_marginTop="124dp"
+        android:layout_marginBottom="225dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/doczoi_2" />
+
+    <ImageView
+        android:id="@+id/img_Doczoi_2_basic"
+        android:layout_width="180dp"
+        android:layout_height="132dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.128"
+        app:srcCompat="@drawable/doczoi_1" />
+
+    <ImageView
+        android:id="@+id/img_Doczoi_2_dead"
+        android:layout_width="106dp"
+        android:layout_height="81dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.827"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.259"
+        app:srcCompat="@drawable/doczoi_3" />
+
+    <ImageView
+        android:id="@+id/img_Mintigress_1_basic"
+        android:layout_width="171dp"
+        android:layout_height="124dp"
+        android:scaleX="-1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.705"
+        app:srcCompat="@drawable/mintigress_1" />
+
+    <ImageView
+        android:id="@+id/img_Mintigress_1_evolved"
+        android:layout_width="163dp"
+        android:layout_height="174dp"
+        android:scaleX="-1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.682"
+        app:srcCompat="@drawable/mintigress_2" />
+
+    <ImageView
+        android:id="@+id/img_Mintigress_1_dead"
+        android:layout_width="178dp"
+        android:layout_height="145dp"
+        android:scaleX="-1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.077"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.852"
+        app:srcCompat="@drawable/mintigress_3" />
+
+    <ImageView
+        android:id="@+id/img_Mintigress_2_basic"
+        android:layout_width="150dp"
+        android:layout_height="108dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.931"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.185"
+        app:srcCompat="@drawable/mintigress_1" />
+
+    <ImageView
+        android:id="@+id/img_Mintigress_2_evolved"
+        android:layout_width="133dp"
+        android:layout_height="158dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.844"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.069"
+        app:srcCompat="@drawable/mintigress_2" />
+
+    <ImageView
+        android:id="@+id/img_Mintigress_2_dead"
+        android:layout_width="158dp"
+        android:layout_height="132dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.929"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.264"
+        app:srcCompat="@drawable/mintigress_3" />
+
+    <ImageView
+        android:id="@+id/img_Moyks_1_basic"
+        android:layout_width="144dp"
+        android:layout_height="146dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.699"
+        app:srcCompat="@drawable/moyks_1" />
+
+    <ImageView
+        android:id="@+id/img_Moyks_1_evolved"
+        android:layout_width="175dp"
+        android:layout_height="174dp"
+        android:scaleX="-1"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.081"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.818"
+        app:srcCompat="@drawable/moyks_2" />
+
+    <ImageView
+        android:id="@+id/img_Moyks_1_dead"
+        android:layout_width="206dp"
+        android:layout_height="118dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.889"
+        app:srcCompat="@drawable/moyks_3" />
+
+    <ImageView
+        android:id="@+id/img_Moyks_2_basic"
+        android:layout_width="124dp"
+        android:layout_height="130dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.811"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.127"
+        app:srcCompat="@drawable/moyks_1" />
+
+    <ImageView
+        android:id="@+id/img_Moyks_2_evolved"
+        android:layout_width="148dp"
+        android:layout_height="145dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.872"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.18"
+        app:srcCompat="@drawable/moyks_2" />
+
+    <ImageView
+        android:id="@+id/img_Moyks_2_dead"
+        android:layout_width="174dp"
+        android:layout_height="95dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="@+id/image_background_battle"
+        app:layout_constraintEnd_toEndOf="@+id/image_background_battle"
+        app:layout_constraintHorizontal_bias="0.923"
+        app:layout_constraintStart_toStartOf="@+id/image_background_battle"
+        app:layout_constraintTop_toTopOf="@+id/image_background_battle"
+        app:layout_constraintVertical_bias="0.333"
+        app:srcCompat="@drawable/moyks_3" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

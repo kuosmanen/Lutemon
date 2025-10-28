@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/clLutemonCreation"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LutemonCreationActivity">
+
+    <Button
+        android:id="@+id/buttonAddLutemon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:onClick="addLutemon"
+        android:text="Add Lutemon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/LutemonGroup"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <RadioGroup
+        android:id="@+id/LutemonGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtChooseType">
+
+        <RadioButton
+            android:id="@+id/rbMoyks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Möyks" />
+
+        <RadioButton
+            android:id="@+id/rbBanankey"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Banankey" />
+
+        <RadioButton
+            android:id="@+id/rbMintigress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mintigress" />
+
+        <RadioButton
+            android:id="@+id/rbBrawlberry"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Brawlberry" />
+
+        <RadioButton
+            android:id="@+id/rbDoczoi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Doczoi" />
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/inputFieldName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtChooseType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Choose the type of Lutemon!"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inputFieldName" />
+
+    <Button
+        android:id="@+id/buttonSaveLutemons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="96dp"
+        android:layout_marginBottom="32dp"
+        android:onClick="saveLutemonsButton"
+        android:text="Save"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaveOrLoadMoreInfo"
+        app:layout_constraintVertical_bias="0.162" />
+
+    <Button
+        android:id="@+id/buttonLoadLutemons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="96dp"
+        android:onClick="loadLutemonsButton"
+        android:text="Load"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaveOrLoadMoreInfo"
+        app:layout_constraintVertical_bias="0.134" />
+
+    <TextView
+        android:id="@+id/txtSaveOrLoad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Do you want to save your current Lutemons or load previous Lutemons?"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAddLutemon" />
+
+    <TextView
+        android:id="@+id/txtSaveOrLoadMoreInfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Saving will save the lutemons you've created and their stats to memory so you can use them on a later playthrough.\nLoading lutemons will overwrite your lutemons for the ones you've previously saved."
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtSaveOrLoad" />
+</androidx.constraintlayout.widget.ConstraintLayout>
